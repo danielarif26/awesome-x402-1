@@ -49,6 +49,7 @@ Expect unpaid `GET` → **HTTP 402** with a payment challenge. Hosts on Cloudfla
 | [Spot FX `/fx`](https://api.premiumrewards.vip/fx?from=USD&to=EUR&amount=100) | $0.01 USDC | Base | x402 | Yes | * | ECB-spot-style FX check (Clear-to-Send) |
 | [Pulse `/check`](https://pulse.premiumrewards.vip/check) | $0.005 USDC | Base | x402 | Yes | * | Tiny pre-spend probe before a larger buy |
 | [Shop landing](https://premiumrewards.vip/) | free door | — | — | Yes | * | Human-readable entry; paid paths are the `402`s above |
+| [Penniless Data Utilities `/repair/json`](https://penniless-json-repair.sjaman.workers.dev/repair/json) | $0.001 USDC | Base | x402 | Yes | * | 9 deterministic data/lookup tools (JSON repair, YAML→JSON, cron next-run, diff, extract, whois, DNS, repo-stats, email-validate); MCP at `/mcp` |
 
 \* CORS: agent HTTP clients usually do not need browser CORS; treat as n/a for mute agent buyers.
 
